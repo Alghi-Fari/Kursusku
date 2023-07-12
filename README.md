@@ -26,30 +26,32 @@ Follow these steps to set up and run the project locally:
     ```
 
 3. Rename the .env.example file to .env and update the database configuration:
+   ```makefile
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
    DB_DATABASE=your_database_name
    DB_USERNAME=your_database_username
    DB_PASSWORD=your_database_password
+   ```
 
-4. Generate the application key:
+5. Generate the application key:
 
    ```shell
    php artisan key:generate
    ```
 
-5. Run the database migrations:
+6. Run the database migrations:
 
    ```shell
    php artisan migrate
    ```
 
-6. Start the local development server:
+7. Start the local development server:
 
    ```shell
    php artisan serve
    ```
 
-7. Access the application in your web browser at
+8. Access the application in your web browser at
    'http://localhost:8000'.
